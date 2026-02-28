@@ -1,0 +1,2 @@
+n_samples,n_features,n_clusters,channel_used,leakage_ami_cluster_vs_dataset,leakage_p_strat_perm,signal_ami_cluster_vs_label,signal_p_strat_perm,chi2_cluster_vs_dataset,chi2_p_cluster_vs_dataset,chi2_cluster_vs_label,chi2_p_cluster_vs_label,stability_ari_mean,stability_ari_ci_low,stability_ari_ci_high,stability_n_boot,verdict,seed,n_perm
+12924,154,3,C,0.2813870171509377,0.0004997501249375312,0.08398107093128807,0.0004997501249375312,,,,,0.9803906398387982,0.9614698397354733,0.9912229263886608,100,artifact,42,2000

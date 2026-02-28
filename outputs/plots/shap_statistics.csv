@@ -1,0 +1,6 @@
+dataset,mode,n_cases,struct_dominance_mean,struct_dominance_ci_low,struct_dominance_ci_high,struct_features_B,struct_features_C,explain_model,lex_shortcut_concentration_top10_mean,lex_shortcut_concentration_ci_low,lex_shortcut_concentration_ci_high,lex_topk_features
+reddit_combi,structure_wins,10,0.99999999999987,0.9999999999998475,0.9999999999998912,160.0,0.0,BC,,,,
+twitter,lexical_wins,13,0.9999999999998834,0.9999999999998744,0.9999999999998942,160.0,0.0,BC,,,,
+twitter_gold,lexical_wins,11,0.9999999999998778,0.9999999999998712,0.9999999999998852,160.0,0.0,BC,,,,
+twitter_gold,structure_wins,17,0.9999999999998775,0.9999999999998695,0.999999999999887,160.0,0.0,BC,,,,
+ALL,lexical_wins,40,,,,,,A,0.33318852969778034,0.30814385114454096,0.3554935246097395,500.0

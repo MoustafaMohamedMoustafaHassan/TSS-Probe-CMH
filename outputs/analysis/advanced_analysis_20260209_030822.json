@@ -1,0 +1,458 @@
+{
+  "timestamp": "2026-02-09T02:39:04.660405",
+  "version": "1.0.0",
+  "analyses": {
+    "stylistic_profiling": [
+      {
+        "n_samples": 12924,
+        "n_features": 154,
+        "n_clusters": 3,
+        "channel_used": "C",
+        "leakage_ami_cluster_vs_dataset": 0.2813870171509377,
+        "leakage_p_strat_perm": 0.0004997501249375312,
+        "signal_ami_cluster_vs_label": 0.08398107093128807,
+        "signal_p_strat_perm": 0.0004997501249375312,
+        "chi2_cluster_vs_dataset": NaN,
+        "chi2_p_cluster_vs_dataset": NaN,
+        "chi2_cluster_vs_label": NaN,
+        "chi2_p_cluster_vs_label": NaN,
+        "stability_ari_mean": 0.9803906398387982,
+        "stability_ari_ci_low": 0.9614698397354733,
+        "stability_ari_ci_high": 0.9912229263886608,
+        "stability_n_boot": 100,
+        "verdict": "artifact",
+        "seed": 42,
+        "n_perm": 2000
+      }
+    ],
+    "shap_explainability": [
+      {
+        "dataset": "reddit_combi",
+        "mode": "structure_wins",
+        "n_cases": 10,
+        "struct_dominance_mean": 0.99999999999987,
+        "struct_dominance_ci_low": 0.9999999999998475,
+        "struct_dominance_ci_high": 0.9999999999998912,
+        "struct_features_B": 160.0,
+        "struct_features_C": 0.0,
+        "explain_model": "BC",
+        "lex_shortcut_concentration_top10_mean": NaN,
+        "lex_shortcut_concentration_ci_low": NaN,
+        "lex_shortcut_concentration_ci_high": NaN,
+        "lex_topk_features": NaN
+      },
+      {
+        "dataset": "twitter",
+        "mode": "lexical_wins",
+        "n_cases": 13,
+        "struct_dominance_mean": 0.9999999999998834,
+        "struct_dominance_ci_low": 0.9999999999998744,
+        "struct_dominance_ci_high": 0.9999999999998942,
+        "struct_features_B": 160.0,
+        "struct_features_C": 0.0,
+        "explain_model": "BC",
+        "lex_shortcut_concentration_top10_mean": NaN,
+        "lex_shortcut_concentration_ci_low": NaN,
+        "lex_shortcut_concentration_ci_high": NaN,
+        "lex_topk_features": NaN
+      },
+      {
+        "dataset": "twitter_gold",
+        "mode": "lexical_wins",
+        "n_cases": 11,
+        "struct_dominance_mean": 0.9999999999998778,
+        "struct_dominance_ci_low": 0.9999999999998712,
+        "struct_dominance_ci_high": 0.9999999999998852,
+        "struct_features_B": 160.0,
+        "struct_features_C": 0.0,
+        "explain_model": "BC",
+        "lex_shortcut_concentration_top10_mean": NaN,
+        "lex_shortcut_concentration_ci_low": NaN,
+        "lex_shortcut_concentration_ci_high": NaN,
+        "lex_topk_features": NaN
+      },
+      {
+        "dataset": "twitter_gold",
+        "mode": "structure_wins",
+        "n_cases": 17,
+        "struct_dominance_mean": 0.9999999999998775,
+        "struct_dominance_ci_low": 0.9999999999998695,
+        "struct_dominance_ci_high": 0.999999999999887,
+        "struct_features_B": 160.0,
+        "struct_features_C": 0.0,
+        "explain_model": "BC",
+        "lex_shortcut_concentration_top10_mean": NaN,
+        "lex_shortcut_concentration_ci_low": NaN,
+        "lex_shortcut_concentration_ci_high": NaN,
+        "lex_topk_features": NaN
+      },
+      {
+        "dataset": "ALL",
+        "mode": "lexical_wins",
+        "n_cases": 40,
+        "struct_dominance_mean": NaN,
+        "struct_dominance_ci_low": NaN,
+        "struct_dominance_ci_high": NaN,
+        "struct_features_B": NaN,
+        "struct_features_C": NaN,
+        "explain_model": "A",
+        "lex_shortcut_concentration_top10_mean": 0.33318852969778034,
+        "lex_shortcut_concentration_ci_low": 0.30814385114454096,
+        "lex_shortcut_concentration_ci_high": 0.3554935246097395,
+        "lex_topk_features": 500.0
+      }
+    ],
+    "divergence_hypothesis": {
+      "evaluations": [
+        {
+          "channel": "A",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7181818181818181,
+          "macro_f1": 0.6336363636363636,
+          "mcc": 0.32402173936102013,
+          "precision": 0.6183953033268101,
+          "recall": 0.8563685636856369
+        },
+        {
+          "channel": "A",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.5918456817185445,
+          "macro_f1": 0.6611905687898076,
+          "mcc": 0.34239977619813045,
+          "precision": 0.5152671755725191,
+          "recall": 0.6951596292481977
+        },
+        {
+          "channel": "A",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.43684004692999606,
+          "macro_f1": 0.5225016561180592,
+          "mcc": 0.06557082352374977,
+          "precision": 0.523921200750469,
+          "recall": 0.37458081824279005
+        },
+        {
+          "channel": "A",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9099508822994361,
+          "macro_f1": 0.6117022095269719,
+          "mcc": 0.22374799385239982,
+          "precision": 0.9055032585083272,
+          "recall": 0.9144424131627057
+        },
+        {
+          "channel": "B",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.6938775510204082,
+          "macro_f1": 0.561367633225635,
+          "mcc": 0.22492575976978627,
+          "precision": 0.5747330960854092,
+          "recall": 0.8753387533875339
+        },
+        {
+          "channel": "B",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.37830319888734354,
+          "macro_f1": 0.5851497381128202,
+          "mcc": 0.2272847183573037,
+          "precision": 0.582441113490364,
+          "recall": 0.2801235839340886
+        },
+        {
+          "channel": "B",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.2549738219895288,
+          "macro_f1": 0.4628640512076288,
+          "mcc": 0.08099289131231728,
+          "precision": 0.581145584725537,
+          "recall": 0.16331321260898726
+        },
+        {
+          "channel": "B",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9212207239176721,
+          "macro_f1": 0.5791670629897638,
+          "mcc": 0.17403661959742817,
+          "precision": 0.8948638400551534,
+          "recall": 0.9491773308957953
+        },
+        {
+          "channel": "C",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7749077490774908,
+          "macro_f1": 0.7391556573588427,
+          "mcc": 0.4952941471605618,
+          "precision": 0.7094594594594594,
+          "recall": 0.8536585365853658
+        },
+        {
+          "channel": "C",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.5722964763061968,
+          "macro_f1": 0.7000846684709469,
+          "mcc": 0.42113571823403334,
+          "precision": 0.6977777777777778,
+          "recall": 0.4850669412976313
+        },
+        {
+          "channel": "C",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.30434782608695654,
+          "macro_f1": 0.5038562202075891,
+          "mcc": 0.2090333575531342,
+          "precision": 0.7620967741935484,
+          "recall": 0.19014084507042253
+        },
+        {
+          "channel": "C",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9101123595505618,
+          "macro_f1": 0.681707660413094,
+          "mcc": 0.3712203363973119,
+          "precision": 0.9328214971209213,
+          "recall": 0.8884826325411335
+        },
+        {
+          "channel": "AB",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7286821705426356,
+          "macro_f1": 0.6318932674345057,
+          "mcc": 0.3437772537009162,
+          "precision": 0.6161048689138576,
+          "recall": 0.8915989159891599
+        },
+        {
+          "channel": "AB",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.48484848484848486,
+          "macro_f1": 0.6497262813052287,
+          "mcc": 0.3428424385536826,
+          "precision": 0.6727605118829981,
+          "recall": 0.37899073120494337
+        },
+        {
+          "channel": "AB",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.24540857066808625,
+          "macro_f1": 0.45990423939399494,
+          "mcc": 0.08776821172467615,
+          "precision": 0.5948387096774194,
+          "recall": 0.1545942320590208
+        },
+        {
+          "channel": "AB",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9192081326912788,
+          "macro_f1": 0.5889003020248538,
+          "mcc": 0.18812395529038986,
+          "precision": 0.8972841225626741,
+          "recall": 0.9422303473491773
+        },
+        {
+          "channel": "AC",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7415204678362574,
+          "macro_f1": 0.6785863208746504,
+          "mcc": 0.39697833455476195,
+          "precision": 0.6522633744855967,
+          "recall": 0.8590785907859079
+        },
+        {
+          "channel": "AC",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.5641440712262242,
+          "macro_f1": 0.6171409483236787,
+          "mcc": 0.2790387910924109,
+          "precision": 0.4646666666666667,
+          "recall": 0.717816683831102
+        },
+        {
+          "channel": "AC",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.5189736176364294,
+          "macro_f1": 0.5674233167547227,
+          "mcc": 0.14036194376504937,
+          "precision": 0.5626959247648903,
+          "recall": 0.4815560026827633
+        },
+        {
+          "channel": "AC",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.911710380495013,
+          "macro_f1": 0.6585915086554667,
+          "mcc": 0.3186944627705446,
+          "precision": 0.9212392683837253,
+          "recall": 0.9023765996343693
+        },
+        {
+          "channel": "BC",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7508771929824561,
+          "macro_f1": 0.6902212051868802,
+          "mcc": 0.4209710235686589,
+          "precision": 0.6604938271604939,
+          "recall": 0.8699186991869918
+        },
+        {
+          "channel": "BC",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.539553752535497,
+          "macro_f1": 0.6897909707004476,
+          "mcc": 0.4381194603524968,
+          "precision": 0.7854330708661418,
+          "recall": 0.41091658084449023
+        },
+        {
+          "channel": "BC",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.21304849884526558,
+          "macro_f1": 0.45507980497818834,
+          "mcc": 0.1663785695744273,
+          "precision": 0.7655601659751037,
+          "recall": 0.12374245472837023
+        },
+        {
+          "channel": "BC",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9196379087382228,
+          "macro_f1": 0.6896326189653847,
+          "mcc": 0.3809882050274045,
+          "precision": 0.9294249439880508,
+          "recall": 0.910054844606947
+        },
+        {
+          "channel": "ABC",
+          "dataset": "dreaddit_test",
+          "label_type": "human",
+          "platform": "reddit",
+          "f1": 0.7508771929824561,
+          "macro_f1": 0.6902212051868802,
+          "mcc": 0.4209710235686589,
+          "precision": 0.6604938271604939,
+          "recall": 0.8699186991869918
+        },
+        {
+          "channel": "ABC",
+          "dataset": "twitter_gold",
+          "label_type": "human",
+          "platform": "twitter",
+          "f1": 0.5385656292286874,
+          "macro_f1": 0.6891982678787871,
+          "mcc": 0.4371809012328014,
+          "precision": 0.7850098619329389,
+          "recall": 0.4098867147270855
+        },
+        {
+          "channel": "ABC",
+          "dataset": "twitter",
+          "label_type": "auto",
+          "platform": "twitter",
+          "f1": 0.21304849884526558,
+          "macro_f1": 0.45507980497818834,
+          "mcc": 0.1663785695744273,
+          "precision": 0.7655601659751037,
+          "recall": 0.12374245472837023
+        },
+        {
+          "channel": "ABC",
+          "dataset": "reddit_combi",
+          "label_type": "auto",
+          "platform": "reddit",
+          "f1": 0.9196379087382228,
+          "macro_f1": 0.6896326189653847,
+          "mcc": 0.3809882050274045,
+          "precision": 0.9294249439880508,
+          "recall": 0.910054844606947
+        }
+      ],
+      "human_rankings": {
+        "C": 1,
+        "BC": 2,
+        "ABC": 3,
+        "AC": 4,
+        "A": 5,
+        "AB": 6,
+        "B": 7
+      },
+      "auto_rankings": {
+        "AC": 1,
+        "C": 2,
+        "ABC": 3,
+        "BC": 4,
+        "A": 5,
+        "AB": 6,
+        "B": 7
+      },
+      "divergence_scores": {
+        "C": -1,
+        "BC": -2,
+        "AC": 3,
+        "A": 0,
+        "AB": 0,
+        "ABC": 0,
+        "B": 0
+      },
+      "hypothesis_supported": true
+    },
+    "paired_inference": {
+      "per_dataset_table": "E:\\TSS\\outputs\\analysis\\paired_inference_channels.csv",
+      "group_dod_table": "E:\\TSS\\outputs\\analysis\\paired_inference_group_DoD.csv",
+      "comparisons": [
+        "C-A",
+        "BC-A",
+        "B-A"
+      ],
+      "metric": "macro_f1",
+      "n_boot": 5000,
+      "n_perm": 10000
+    }
+  }
+}

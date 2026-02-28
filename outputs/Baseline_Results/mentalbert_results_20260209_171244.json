@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "model": "MentalBERT",
+    "version": "3.1_tss_aligned",
+    "timestamp": "20260209_171244",
+    "protocol": "5-fold CV, weighted loss, cal threshold, TSS-identical data",
+    "n_folds": 5,
+    "sample_counts": {
+      "dreaddit_test": 715,
+      "twitter": 6218,
+      "twitter_gold": 2863,
+      "reddit_combi": 3110
+    },
+    "cv_val_macro_f1": "0.8262+/-0.0091"
+  },
+  "results": {
+    "dreaddit_test": {
+      "n": 715,
+      "metrics": {
+        "macro_f1": 0.8006087981146897,
+        "f1": 0.8131578947368421,
+        "precision": 0.7902813299232737,
+        "recall": 0.8373983739837398,
+        "accuracy": 0.8013986013986014,
+        "mcc": 0.6027455840320645,
+        "roc_auc": 0.8934943684696963,
+        "pr_auc": 0.9052436062895954
+      },
+      "ci": {
+        "mean": 0.8003443364985691,
+        "ci_lo": 0.7712386227797614,
+        "ci_hi": 0.8291946517421008,
+        "n": 10000
+      }
+    },
+    "twitter": {
+      "n": 6218,
+      "metrics": {
+        "macro_f1": 0.4181524431083943,
+        "f1": 0.1378026070763501,
+        "precision": 0.8987854251012146,
+        "recall": 0.0746218487394958,
+        "accuracy": 0.553232550659376,
+        "mcc": 0.1711413846540605,
+        "roc_auc": 0.6878745429716753,
+        "pr_auc": 0.6825241601910327
+      },
+      "ci": {
+        "mean": 0.418124972207746,
+        "ci_lo": 0.40762000509143326,
+        "ci_hi": 0.4287896868425268,
+        "n": 10000
+      }
+    },
+    "twitter_gold": {
+      "n": 2863,
+      "metrics": {
+        "macro_f1": 0.7149641926970842,
+        "f1": 0.5700071073205402,
+        "precision": 0.9134396355353075,
+        "recall": 0.4142561983471074,
+        "accuracy": 0.7886831994411456,
+        "mcc": 0.5175640640696523,
+        "roc_auc": 0.8716544189799168,
+        "pr_auc": 0.8129728878416574
+      },
+      "ci": {
+        "mean": 0.7145971898341692,
+        "ci_lo": 0.6953257138054388,
+        "ci_hi": 0.7337923570083055,
+        "n": 10000
+      }
+    },
+    "reddit_combi": {
+      "n": 3110,
+      "metrics": {
+        "macro_f1": 0.7596625309115717,
+        "f1": 0.922102839600921,
+        "precision": 0.9705169628432956,
+        "recall": 0.8782894736842105,
+        "accuracy": 0.8694533762057878,
+        "mcc": 0.551517949177994,
+        "roc_auc": 0.913140694874441,
+        "pr_auc": 0.9858317901590004
+      },
+      "ci": {
+        "mean": 0.7594286766850094,
+        "ci_lo": 0.7388125751959227,
+        "ci_hi": 0.7795284872830691,
+        "n": 10000
+      }
+    }
+  },
+  "lodo": [
+    {
+      "model": "MentalBERT",
+      "heldout_domain": "abuse",
+      "in_macro_f1": 0.8501475613544579,
+      "out_macro_f1": 0.7721671821504772,
+      "domain_gap": 0.07798037920398071
+    },
+    {
+      "model": "MentalBERT",
+      "heldout_domain": "anxiety",
+      "in_macro_f1": 0.8444336593743,
+      "out_macro_f1": 0.827526046895567,
+      "domain_gap": 0.01690761247873307
+    },
+    {
+      "model": "MentalBERT",
+      "heldout_domain": "financial",
+      "in_macro_f1": 0.8263939763939764,
+      "out_macro_f1": 0.8326310861423221,
+      "domain_gap": -0.006237109748345682
+    },
+    {
+      "model": "MentalBERT",
+      "heldout_domain": "ptsd",
+      "in_macro_f1": 0.787945372017359,
+      "out_macro_f1": 0.8510802469135803,
+      "domain_gap": -0.06313487489622127
+    },
+    {
+      "model": "MentalBERT",
+      "heldout_domain": "social",
+      "in_macro_f1": 0.8225314525352649,
+      "out_macro_f1": 0.8058644907692021,
+      "domain_gap": 0.01666696176606286
+    }
+  ]
+}

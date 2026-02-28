@@ -1,0 +1,4 @@
+compare,metric,human_delta_mean,auto_delta_mean,DoD_human_minus_auto,DoD_ci95_low,DoD_ci95_high,human_datasets,auto_datasets,n_boot_group
+C - A,macro_f1,0.051973090505173895,0.010527869009742131,0.04144522149543176,0.016327405738952215,0.06754675611929946,"dreaddit_test,twitter_gold","reddit_combi,twitter",1000
+BC - A,macro_f1,0.03380517151707425,-0.019380842281321555,0.05318601379839582,0.028764999490339227,0.07723774315373602,"dreaddit_test,twitter_gold","reddit_combi,twitter",1000
+B - A,macro_f1,-0.07614148568803972,-0.05077735595391556,-0.02536412973412416,-0.05321738398847745,0.0008891744749206337,"dreaddit_test,twitter_gold","reddit_combi,twitter",1000

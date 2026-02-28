@@ -1,0 +1,2595 @@
+{
+  "timestamp": "2026-02-09T02:15:39.208191",
+  "analysis_version": "3.0",
+  "instance_level": true,
+  "primary_metric": "macro_f1",
+  "n_boot": 10000,
+  "total_sample_predictions": 90342,
+  "channel_orthogonality": {
+    "method": "instance_level_spearman",
+    "total_sample_comparisons": 271026,
+    "all_correlations": [
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_AB",
+        "rho": 0.7132475805495851,
+        "p_value": 3.798143301882215e-112,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_ABC",
+        "rho": 0.6214826908221585,
+        "p_value": 1.2652106567700858e-77,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_AC",
+        "rho": 0.8772686728322613,
+        "p_value": 1.8059804568868053e-229,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_B",
+        "rho": 0.423100724448079,
+        "p_value": 2.026329473391777e-32,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_BC",
+        "rho": 0.6214198880317842,
+        "p_value": 1.3240241106591857e-77,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "A_vs_C",
+        "rho": 0.6269450890877115,
+        "p_value": 2.3361850036363994e-79,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AB_vs_ABC",
+        "rho": 0.82757252606086,
+        "p_value": 5.82995583690873e-181,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AB_vs_AC",
+        "rho": 0.6771674923827405,
+        "p_value": 4.5261104387078007e-97,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AB_vs_B",
+        "rho": 0.8435139293831374,
+        "p_value": 1.2090288699304741e-194,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AB_vs_BC",
+        "rho": 0.827713134712806,
+        "p_value": 4.4791590169321095e-181,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AB_vs_C",
+        "rho": 0.7114961279272815,
+        "p_value": 2.3177027246587357e-111,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "ABC_vs_AC",
+        "rho": 0.7064997112647459,
+        "p_value": 3.7482860620791756e-109,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "ABC_vs_B",
+        "rho": 0.6830145208061738,
+        "p_value": 2.2960380978442203e-99,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "ABC_vs_BC",
+        "rho": 0.9999913330179514,
+        "p_value": 0.0,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "ABC_vs_C",
+        "rho": 0.8569878035208303,
+        "p_value": 1.832220480223035e-207,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AC_vs_B",
+        "rho": 0.41669332967394085,
+        "p_value": 2.1119441031019817e-31,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AC_vs_BC",
+        "rho": 0.7067052237936234,
+        "p_value": 3.0472110692943633e-109,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "AC_vs_C",
+        "rho": 0.7727644356957536,
+        "p_value": 6.526518431728337e-143,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "B_vs_BC",
+        "rho": 0.6833294539834138,
+        "p_value": 1.7212702298564392e-99,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "B_vs_C",
+        "rho": 0.4854361215517969,
+        "p_value": 1.5178039184079421e-43,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "dreaddit_test",
+        "pair": "BC_vs_C",
+        "rho": 0.8571333365943947,
+        "p_value": 1.3103951018655644e-207,
+        "n_samples": 715,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_AB",
+        "rho": 0.34398690972631096,
+        "p_value": 3.0475712134938045e-172,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_ABC",
+        "rho": 0.17255066473332015,
+        "p_value": 9.276336218172465e-43,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_AC",
+        "rho": 0.5355892708422078,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_B",
+        "rho": 0.19668260268486595,
+        "p_value": 2.868640711537342e-55,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_BC",
+        "rho": 0.1723862127569965,
+        "p_value": 1.113527634368253e-42,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "A_vs_C",
+        "rho": 0.16172963512530333,
+        "p_value": 1.0427726865741545e-37,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AB_vs_ABC",
+        "rho": 0.6806495841010506,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AB_vs_AC",
+        "rho": 0.27341421120504333,
+        "p_value": 4.93142369678e-107,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AB_vs_B",
+        "rho": 0.9019184784418713,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AB_vs_BC",
+        "rho": 0.6798426744861272,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AB_vs_C",
+        "rho": 0.4340771430326366,
+        "p_value": 3.665719116152491e-284,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "ABC_vs_AC",
+        "rho": 0.4070700546596347,
+        "p_value": 7.160201448593244e-247,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "ABC_vs_B",
+        "rho": 0.6917430629783783,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "ABC_vs_BC",
+        "rho": 0.9999798437406368,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "ABC_vs_C",
+        "rho": 0.718045490013512,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AC_vs_B",
+        "rho": 0.19635962747590857,
+        "p_value": 4.331250419622943e-55,
+        "n_samples": 6218,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AC_vs_BC",
+        "rho": 0.4066056518200307,
+        "p_value": 2.92843211506936e-246,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "AC_vs_C",
+        "rho": 0.5870653638152074,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "B_vs_BC",
+        "rho": 0.6910725669911557,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "B_vs_C",
+        "rho": 0.39758293408219003,
+        "p_value": 1.4441708821979905e-234,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter",
+        "pair": "BC_vs_C",
+        "rho": 0.7179986455086648,
+        "p_value": 0.0,
+        "n_samples": 6218,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_AB",
+        "rho": 0.4294662520105318,
+        "p_value": 7.529644397233114e-129,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_ABC",
+        "rho": 0.34138474421027787,
+        "p_value": 4.5405899962327533e-79,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_AC",
+        "rho": 0.5494167489280019,
+        "p_value": 1.564113568484893e-225,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_B",
+        "rho": 0.24329212070706105,
+        "p_value": 7.567334422590148e-40,
+        "n_samples": 2863,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_BC",
+        "rho": 0.34114814720106856,
+        "p_value": 5.901464190927765e-79,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "A_vs_C",
+        "rho": 0.3050460651277389,
+        "p_value": 1.0201454716680447e-62,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AB_vs_ABC",
+        "rho": 0.7561405878387015,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AB_vs_AC",
+        "rho": 0.35829384417258947,
+        "p_value": 1.8211936002317295e-87,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AB_vs_B",
+        "rho": 0.9035274525539713,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AB_vs_BC",
+        "rho": 0.7556492013130915,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AB_vs_C",
+        "rho": 0.5260490225505565,
+        "p_value": 1.5261641244741054e-203,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "ABC_vs_AC",
+        "rho": 0.5163039160448119,
+        "p_value": 7.180004715890901e-195,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "ABC_vs_B",
+        "rho": 0.7089682170203089,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "ABC_vs_BC",
+        "rho": 0.9999882169892257,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "ABC_vs_C",
+        "rho": 0.7557902051412408,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AC_vs_B",
+        "rho": 0.24429257532511897,
+        "p_value": 3.589030776867543e-40,
+        "n_samples": 2863,
+        "orthogonal": true
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AC_vs_BC",
+        "rho": 0.5159726537974292,
+        "p_value": 1.399556555475104e-194,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "AC_vs_C",
+        "rho": 0.6770326570514588,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "B_vs_BC",
+        "rho": 0.708667470537262,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "B_vs_C",
+        "rho": 0.45023108546564405,
+        "p_value": 6.071407208178565e-143,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "twitter_gold",
+        "pair": "BC_vs_C",
+        "rho": 0.7558550748520783,
+        "p_value": 0.0,
+        "n_samples": 2863,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_AB",
+        "rho": 0.5544427396655196,
+        "p_value": 3.2711465534589544e-250,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_ABC",
+        "rho": 0.5080950001230128,
+        "p_value": 8.146319464144237e-204,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_AC",
+        "rho": 0.6307698827748466,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_B",
+        "rho": 0.3214298920932551,
+        "p_value": 1.1172475067187911e-75,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_BC",
+        "rho": 0.5076977668179423,
+        "p_value": 1.897988206940758e-203,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "A_vs_C",
+        "rho": 0.4664059292662331,
+        "p_value": 8.537392884125793e-168,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AB_vs_ABC",
+        "rho": 0.6978636042461722,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AB_vs_AC",
+        "rho": 0.5583125420744323,
+        "p_value": 2.006733604603362e-254,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AB_vs_B",
+        "rho": 0.7933664347323144,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AB_vs_BC",
+        "rho": 0.698485493156892,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AB_vs_C",
+        "rho": 0.5593890103658398,
+        "p_value": 1.3208847684011636e-255,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "ABC_vs_AC",
+        "rho": 0.6289958463100552,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "ABC_vs_B",
+        "rho": 0.5902884143330084,
+        "p_value": 1.8581172210755736e-291,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "ABC_vs_BC",
+        "rho": 0.9999826579771303,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "ABC_vs_C",
+        "rho": 0.7918727637671498,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AC_vs_B",
+        "rho": 0.3652909537472798,
+        "p_value": 8.573722335727753e-99,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AC_vs_BC",
+        "rho": 0.6297624250775872,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "AC_vs_C",
+        "rho": 0.7386425846044107,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "B_vs_BC",
+        "rho": 0.5910208885165599,
+        "p_value": 2.3532791076251742e-292,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "B_vs_C",
+        "rho": 0.3886986580131237,
+        "p_value": 1.0445751668670857e-112,
+        "n_samples": 3110,
+        "orthogonal": false
+      },
+      {
+        "dataset": "reddit_combi",
+        "pair": "BC_vs_C",
+        "rho": 0.7922973479174662,
+        "p_value": 0.0,
+        "n_samples": 3110,
+        "orthogonal": false
+      }
+    ],
+    "aggregated_by_pair": {
+      "A_vs_AB": {
+        "mean_rho": 0.5102858704879869,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.7132475805495851,
+          "twitter": 0.34398690972631096,
+          "twitter_gold": 0.4294662520105318,
+          "reddit_combi": 0.5544427396655196
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "A_vs_ABC": {
+        "mean_rho": 0.4108782749721923,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6214826908221585,
+          "twitter": 0.17255066473332015,
+          "twitter_gold": 0.34138474421027787,
+          "reddit_combi": 0.5080950001230128
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "A_vs_AC": {
+        "mean_rho": 0.6482611438443293,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.8772686728322613,
+          "twitter": 0.5355892708422078,
+          "twitter_gold": 0.5494167489280019,
+          "reddit_combi": 0.6307698827748466
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "A_vs_B": {
+        "mean_rho": 0.2961263349833153,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.423100724448079,
+          "twitter": 0.19668260268486595,
+          "twitter_gold": 0.24329212070706105,
+          "reddit_combi": 0.3214298920932551
+        },
+        "orthogonal": true,
+        "n_datasets": 4
+      },
+      "A_vs_BC": {
+        "mean_rho": 0.41066300370194786,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6214198880317842,
+          "twitter": 0.1723862127569965,
+          "twitter_gold": 0.34114814720106856,
+          "reddit_combi": 0.5076977668179423
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "A_vs_C": {
+        "mean_rho": 0.39003167965174673,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6269450890877115,
+          "twitter": 0.16172963512530333,
+          "twitter_gold": 0.3050460651277389,
+          "reddit_combi": 0.4664059292662331
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AB_vs_ABC": {
+        "mean_rho": 0.7405565755616961,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.82757252606086,
+          "twitter": 0.6806495841010506,
+          "twitter_gold": 0.7561405878387015,
+          "reddit_combi": 0.6978636042461722
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AB_vs_AC": {
+        "mean_rho": 0.46679702245870147,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6771674923827405,
+          "twitter": 0.27341421120504333,
+          "twitter_gold": 0.35829384417258947,
+          "reddit_combi": 0.5583125420744323
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AB_vs_B": {
+        "mean_rho": 0.8605815737778236,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.8435139293831374,
+          "twitter": 0.9019184784418713,
+          "twitter_gold": 0.9035274525539713,
+          "reddit_combi": 0.7933664347323144
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AB_vs_BC": {
+        "mean_rho": 0.7404226259172292,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.827713134712806,
+          "twitter": 0.6798426744861272,
+          "twitter_gold": 0.7556492013130915,
+          "reddit_combi": 0.698485493156892
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AB_vs_C": {
+        "mean_rho": 0.5577528259690786,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.7114961279272815,
+          "twitter": 0.4340771430326366,
+          "twitter_gold": 0.5260490225505565,
+          "reddit_combi": 0.5593890103658398
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "ABC_vs_AC": {
+        "mean_rho": 0.5647173820698119,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.7064997112647459,
+          "twitter": 0.4070700546596347,
+          "twitter_gold": 0.5163039160448119,
+          "reddit_combi": 0.6289958463100552
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "ABC_vs_B": {
+        "mean_rho": 0.6685035537844674,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6830145208061738,
+          "twitter": 0.6917430629783783,
+          "twitter_gold": 0.7089682170203089,
+          "reddit_combi": 0.5902884143330084
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "ABC_vs_BC": {
+        "mean_rho": 0.999985512931236,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.9999913330179514,
+          "twitter": 0.9999798437406368,
+          "twitter_gold": 0.9999882169892257,
+          "reddit_combi": 0.9999826579771303
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "ABC_vs_C": {
+        "mean_rho": 0.7806740656106832,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.8569878035208303,
+          "twitter": 0.718045490013512,
+          "twitter_gold": 0.7557902051412408,
+          "reddit_combi": 0.7918727637671498
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AC_vs_B": {
+        "mean_rho": 0.3056591215555621,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.41669332967394085,
+          "twitter": 0.19635962747590857,
+          "twitter_gold": 0.24429257532511897,
+          "reddit_combi": 0.3652909537472798
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AC_vs_BC": {
+        "mean_rho": 0.5647614886221677,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.7067052237936234,
+          "twitter": 0.4066056518200307,
+          "twitter_gold": 0.5159726537974292,
+          "reddit_combi": 0.6297624250775872
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "AC_vs_C": {
+        "mean_rho": 0.6938762602917076,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.7727644356957536,
+          "twitter": 0.5870653638152074,
+          "twitter_gold": 0.6770326570514588,
+          "reddit_combi": 0.7386425846044107
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "B_vs_BC": {
+        "mean_rho": 0.6685225950070978,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6833294539834138,
+          "twitter": 0.6910725669911557,
+          "twitter_gold": 0.708667470537262,
+          "reddit_combi": 0.5910208885165599
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "B_vs_C": {
+        "mean_rho": 0.4304871997781887,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.4854361215517969,
+          "twitter": 0.39758293408219003,
+          "twitter_gold": 0.45023108546564405,
+          "reddit_combi": 0.3886986580131237
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "BC_vs_C": {
+        "mean_rho": 0.780821101218151,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.8571333365943947,
+          "twitter": 0.7179986455086648,
+          "twitter_gold": 0.7558550748520783,
+          "reddit_combi": 0.7922973479174662
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      }
+    },
+    "primary_pairs_ABC": {
+      "A_vs_B": {
+        "mean_rho": 0.2961263349833153,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.423100724448079,
+          "twitter": 0.19668260268486595,
+          "twitter_gold": 0.24329212070706105,
+          "reddit_combi": 0.3214298920932551
+        },
+        "orthogonal": true,
+        "n_datasets": 4
+      },
+      "A_vs_C": {
+        "mean_rho": 0.39003167965174673,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.6269450890877115,
+          "twitter": 0.16172963512530333,
+          "twitter_gold": 0.3050460651277389,
+          "reddit_combi": 0.4664059292662331
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      },
+      "B_vs_C": {
+        "mean_rho": 0.4304871997781887,
+        "rhos_per_dataset": {
+          "dreaddit_test": 0.4854361215517969,
+          "twitter": 0.39758293408219003,
+          "twitter_gold": 0.45023108546564405,
+          "reddit_combi": 0.3886986580131237
+        },
+        "orthogonal": false,
+        "n_datasets": 4
+      }
+    },
+    "mean_abs_rho": 0.5947792958188154,
+    "ortho_ratio": 0.09523809523809523,
+    "per_dataset": {
+      "dreaddit_test": {
+        "A_vs_AB": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_AB",
+          "rho": 0.7132475805495851,
+          "p_value": 3.798143301882215e-112,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "A_vs_ABC": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_ABC",
+          "rho": 0.6214826908221585,
+          "p_value": 1.2652106567700858e-77,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "A_vs_AC": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_AC",
+          "rho": 0.8772686728322613,
+          "p_value": 1.8059804568868053e-229,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "A_vs_B": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_B",
+          "rho": 0.423100724448079,
+          "p_value": 2.026329473391777e-32,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "A_vs_BC": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_BC",
+          "rho": 0.6214198880317842,
+          "p_value": 1.3240241106591857e-77,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "A_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "A_vs_C",
+          "rho": 0.6269450890877115,
+          "p_value": 2.3361850036363994e-79,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AB_vs_ABC": {
+          "dataset": "dreaddit_test",
+          "pair": "AB_vs_ABC",
+          "rho": 0.82757252606086,
+          "p_value": 5.82995583690873e-181,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AB_vs_AC": {
+          "dataset": "dreaddit_test",
+          "pair": "AB_vs_AC",
+          "rho": 0.6771674923827405,
+          "p_value": 4.5261104387078007e-97,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AB_vs_B": {
+          "dataset": "dreaddit_test",
+          "pair": "AB_vs_B",
+          "rho": 0.8435139293831374,
+          "p_value": 1.2090288699304741e-194,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AB_vs_BC": {
+          "dataset": "dreaddit_test",
+          "pair": "AB_vs_BC",
+          "rho": 0.827713134712806,
+          "p_value": 4.4791590169321095e-181,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AB_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "AB_vs_C",
+          "rho": 0.7114961279272815,
+          "p_value": 2.3177027246587357e-111,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "ABC_vs_AC": {
+          "dataset": "dreaddit_test",
+          "pair": "ABC_vs_AC",
+          "rho": 0.7064997112647459,
+          "p_value": 3.7482860620791756e-109,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "ABC_vs_B": {
+          "dataset": "dreaddit_test",
+          "pair": "ABC_vs_B",
+          "rho": 0.6830145208061738,
+          "p_value": 2.2960380978442203e-99,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "ABC_vs_BC": {
+          "dataset": "dreaddit_test",
+          "pair": "ABC_vs_BC",
+          "rho": 0.9999913330179514,
+          "p_value": 0.0,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "ABC_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "ABC_vs_C",
+          "rho": 0.8569878035208303,
+          "p_value": 1.832220480223035e-207,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AC_vs_B": {
+          "dataset": "dreaddit_test",
+          "pair": "AC_vs_B",
+          "rho": 0.41669332967394085,
+          "p_value": 2.1119441031019817e-31,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AC_vs_BC": {
+          "dataset": "dreaddit_test",
+          "pair": "AC_vs_BC",
+          "rho": 0.7067052237936234,
+          "p_value": 3.0472110692943633e-109,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "AC_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "AC_vs_C",
+          "rho": 0.7727644356957536,
+          "p_value": 6.526518431728337e-143,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "B_vs_BC": {
+          "dataset": "dreaddit_test",
+          "pair": "B_vs_BC",
+          "rho": 0.6833294539834138,
+          "p_value": 1.7212702298564392e-99,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "B_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "B_vs_C",
+          "rho": 0.4854361215517969,
+          "p_value": 1.5178039184079421e-43,
+          "n_samples": 715,
+          "orthogonal": false
+        },
+        "BC_vs_C": {
+          "dataset": "dreaddit_test",
+          "pair": "BC_vs_C",
+          "rho": 0.8571333365943947,
+          "p_value": 1.3103951018655644e-207,
+          "n_samples": 715,
+          "orthogonal": false
+        }
+      },
+      "twitter": {
+        "A_vs_AB": {
+          "dataset": "twitter",
+          "pair": "A_vs_AB",
+          "rho": 0.34398690972631096,
+          "p_value": 3.0475712134938045e-172,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "A_vs_ABC": {
+          "dataset": "twitter",
+          "pair": "A_vs_ABC",
+          "rho": 0.17255066473332015,
+          "p_value": 9.276336218172465e-43,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "A_vs_AC": {
+          "dataset": "twitter",
+          "pair": "A_vs_AC",
+          "rho": 0.5355892708422078,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "A_vs_B": {
+          "dataset": "twitter",
+          "pair": "A_vs_B",
+          "rho": 0.19668260268486595,
+          "p_value": 2.868640711537342e-55,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "A_vs_BC": {
+          "dataset": "twitter",
+          "pair": "A_vs_BC",
+          "rho": 0.1723862127569965,
+          "p_value": 1.113527634368253e-42,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "A_vs_C": {
+          "dataset": "twitter",
+          "pair": "A_vs_C",
+          "rho": 0.16172963512530333,
+          "p_value": 1.0427726865741545e-37,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "AB_vs_ABC": {
+          "dataset": "twitter",
+          "pair": "AB_vs_ABC",
+          "rho": 0.6806495841010506,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "AB_vs_AC": {
+          "dataset": "twitter",
+          "pair": "AB_vs_AC",
+          "rho": 0.27341421120504333,
+          "p_value": 4.93142369678e-107,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "AB_vs_B": {
+          "dataset": "twitter",
+          "pair": "AB_vs_B",
+          "rho": 0.9019184784418713,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "AB_vs_BC": {
+          "dataset": "twitter",
+          "pair": "AB_vs_BC",
+          "rho": 0.6798426744861272,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "AB_vs_C": {
+          "dataset": "twitter",
+          "pair": "AB_vs_C",
+          "rho": 0.4340771430326366,
+          "p_value": 3.665719116152491e-284,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "ABC_vs_AC": {
+          "dataset": "twitter",
+          "pair": "ABC_vs_AC",
+          "rho": 0.4070700546596347,
+          "p_value": 7.160201448593244e-247,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "ABC_vs_B": {
+          "dataset": "twitter",
+          "pair": "ABC_vs_B",
+          "rho": 0.6917430629783783,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "ABC_vs_BC": {
+          "dataset": "twitter",
+          "pair": "ABC_vs_BC",
+          "rho": 0.9999798437406368,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "ABC_vs_C": {
+          "dataset": "twitter",
+          "pair": "ABC_vs_C",
+          "rho": 0.718045490013512,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "AC_vs_B": {
+          "dataset": "twitter",
+          "pair": "AC_vs_B",
+          "rho": 0.19635962747590857,
+          "p_value": 4.331250419622943e-55,
+          "n_samples": 6218,
+          "orthogonal": true
+        },
+        "AC_vs_BC": {
+          "dataset": "twitter",
+          "pair": "AC_vs_BC",
+          "rho": 0.4066056518200307,
+          "p_value": 2.92843211506936e-246,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "AC_vs_C": {
+          "dataset": "twitter",
+          "pair": "AC_vs_C",
+          "rho": 0.5870653638152074,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "B_vs_BC": {
+          "dataset": "twitter",
+          "pair": "B_vs_BC",
+          "rho": 0.6910725669911557,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "B_vs_C": {
+          "dataset": "twitter",
+          "pair": "B_vs_C",
+          "rho": 0.39758293408219003,
+          "p_value": 1.4441708821979905e-234,
+          "n_samples": 6218,
+          "orthogonal": false
+        },
+        "BC_vs_C": {
+          "dataset": "twitter",
+          "pair": "BC_vs_C",
+          "rho": 0.7179986455086648,
+          "p_value": 0.0,
+          "n_samples": 6218,
+          "orthogonal": false
+        }
+      },
+      "twitter_gold": {
+        "A_vs_AB": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_AB",
+          "rho": 0.4294662520105318,
+          "p_value": 7.529644397233114e-129,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "A_vs_ABC": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_ABC",
+          "rho": 0.34138474421027787,
+          "p_value": 4.5405899962327533e-79,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "A_vs_AC": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_AC",
+          "rho": 0.5494167489280019,
+          "p_value": 1.564113568484893e-225,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "A_vs_B": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_B",
+          "rho": 0.24329212070706105,
+          "p_value": 7.567334422590148e-40,
+          "n_samples": 2863,
+          "orthogonal": true
+        },
+        "A_vs_BC": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_BC",
+          "rho": 0.34114814720106856,
+          "p_value": 5.901464190927765e-79,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "A_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "A_vs_C",
+          "rho": 0.3050460651277389,
+          "p_value": 1.0201454716680447e-62,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AB_vs_ABC": {
+          "dataset": "twitter_gold",
+          "pair": "AB_vs_ABC",
+          "rho": 0.7561405878387015,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AB_vs_AC": {
+          "dataset": "twitter_gold",
+          "pair": "AB_vs_AC",
+          "rho": 0.35829384417258947,
+          "p_value": 1.8211936002317295e-87,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AB_vs_B": {
+          "dataset": "twitter_gold",
+          "pair": "AB_vs_B",
+          "rho": 0.9035274525539713,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AB_vs_BC": {
+          "dataset": "twitter_gold",
+          "pair": "AB_vs_BC",
+          "rho": 0.7556492013130915,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AB_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "AB_vs_C",
+          "rho": 0.5260490225505565,
+          "p_value": 1.5261641244741054e-203,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "ABC_vs_AC": {
+          "dataset": "twitter_gold",
+          "pair": "ABC_vs_AC",
+          "rho": 0.5163039160448119,
+          "p_value": 7.180004715890901e-195,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "ABC_vs_B": {
+          "dataset": "twitter_gold",
+          "pair": "ABC_vs_B",
+          "rho": 0.7089682170203089,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "ABC_vs_BC": {
+          "dataset": "twitter_gold",
+          "pair": "ABC_vs_BC",
+          "rho": 0.9999882169892257,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "ABC_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "ABC_vs_C",
+          "rho": 0.7557902051412408,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AC_vs_B": {
+          "dataset": "twitter_gold",
+          "pair": "AC_vs_B",
+          "rho": 0.24429257532511897,
+          "p_value": 3.589030776867543e-40,
+          "n_samples": 2863,
+          "orthogonal": true
+        },
+        "AC_vs_BC": {
+          "dataset": "twitter_gold",
+          "pair": "AC_vs_BC",
+          "rho": 0.5159726537974292,
+          "p_value": 1.399556555475104e-194,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "AC_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "AC_vs_C",
+          "rho": 0.6770326570514588,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "B_vs_BC": {
+          "dataset": "twitter_gold",
+          "pair": "B_vs_BC",
+          "rho": 0.708667470537262,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "B_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "B_vs_C",
+          "rho": 0.45023108546564405,
+          "p_value": 6.071407208178565e-143,
+          "n_samples": 2863,
+          "orthogonal": false
+        },
+        "BC_vs_C": {
+          "dataset": "twitter_gold",
+          "pair": "BC_vs_C",
+          "rho": 0.7558550748520783,
+          "p_value": 0.0,
+          "n_samples": 2863,
+          "orthogonal": false
+        }
+      },
+      "reddit_combi": {
+        "A_vs_AB": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_AB",
+          "rho": 0.5544427396655196,
+          "p_value": 3.2711465534589544e-250,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "A_vs_ABC": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_ABC",
+          "rho": 0.5080950001230128,
+          "p_value": 8.146319464144237e-204,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "A_vs_AC": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_AC",
+          "rho": 0.6307698827748466,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "A_vs_B": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_B",
+          "rho": 0.3214298920932551,
+          "p_value": 1.1172475067187911e-75,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "A_vs_BC": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_BC",
+          "rho": 0.5076977668179423,
+          "p_value": 1.897988206940758e-203,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "A_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "A_vs_C",
+          "rho": 0.4664059292662331,
+          "p_value": 8.537392884125793e-168,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AB_vs_ABC": {
+          "dataset": "reddit_combi",
+          "pair": "AB_vs_ABC",
+          "rho": 0.6978636042461722,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AB_vs_AC": {
+          "dataset": "reddit_combi",
+          "pair": "AB_vs_AC",
+          "rho": 0.5583125420744323,
+          "p_value": 2.006733604603362e-254,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AB_vs_B": {
+          "dataset": "reddit_combi",
+          "pair": "AB_vs_B",
+          "rho": 0.7933664347323144,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AB_vs_BC": {
+          "dataset": "reddit_combi",
+          "pair": "AB_vs_BC",
+          "rho": 0.698485493156892,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AB_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "AB_vs_C",
+          "rho": 0.5593890103658398,
+          "p_value": 1.3208847684011636e-255,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "ABC_vs_AC": {
+          "dataset": "reddit_combi",
+          "pair": "ABC_vs_AC",
+          "rho": 0.6289958463100552,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "ABC_vs_B": {
+          "dataset": "reddit_combi",
+          "pair": "ABC_vs_B",
+          "rho": 0.5902884143330084,
+          "p_value": 1.8581172210755736e-291,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "ABC_vs_BC": {
+          "dataset": "reddit_combi",
+          "pair": "ABC_vs_BC",
+          "rho": 0.9999826579771303,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "ABC_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "ABC_vs_C",
+          "rho": 0.7918727637671498,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AC_vs_B": {
+          "dataset": "reddit_combi",
+          "pair": "AC_vs_B",
+          "rho": 0.3652909537472798,
+          "p_value": 8.573722335727753e-99,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AC_vs_BC": {
+          "dataset": "reddit_combi",
+          "pair": "AC_vs_BC",
+          "rho": 0.6297624250775872,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "AC_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "AC_vs_C",
+          "rho": 0.7386425846044107,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "B_vs_BC": {
+          "dataset": "reddit_combi",
+          "pair": "B_vs_BC",
+          "rho": 0.5910208885165599,
+          "p_value": 2.3532791076251742e-292,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "B_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "B_vs_C",
+          "rho": 0.3886986580131237,
+          "p_value": 1.0445751668670857e-112,
+          "n_samples": 3110,
+          "orthogonal": false
+        },
+        "BC_vs_C": {
+          "dataset": "reddit_combi",
+          "pair": "BC_vs_C",
+          "rho": 0.7922973479174662,
+          "p_value": 0.0,
+          "n_samples": 3110,
+          "orthogonal": false
+        }
+      }
+    },
+    "interpretation": "Weak orthogonality (mean|rho|=0.595, N=271,026 samples)"
+  },
+  "label_regime_analysis": {
+    "channel_analysis": {
+      "A": {
+        "human_mean": 0.6472231781951817,
+        "auto_mean": 0.566865292911642,
+        "regime_gap": 0.08035788528353971,
+        "human_advantage": true,
+        "human_f1s": [
+          0.6336363636363636,
+          0.6608099927539999
+        ],
+        "auto_f1s": [
+          0.5223282022821525,
+          0.6114023835411315
+        ]
+      },
+      "B": {
+        "human_mean": 0.5735463593142175,
+        "auto_mean": 0.5210867683811731,
+        "regime_gap": 0.05245959093304442,
+        "human_advantage": true,
+        "human_f1s": [
+          0.561367633225635,
+          0.5857250854028
+        ],
+        "auto_f1s": [
+          0.46299250086089694,
+          0.5791810359014493
+        ]
+      },
+      "C": {
+        "human_mean": 0.7198823344700661,
+        "auto_mean": 0.5926415789474774,
+        "regime_gap": 0.12724075552258873,
+        "human_advantage": true,
+        "human_f1s": [
+          0.7391556573588427,
+          0.7006090115812895
+        ],
+        "auto_f1s": [
+          0.5039185495535752,
+          0.6813646083413796
+        ]
+      },
+      "AB": {
+        "human_mean": 0.6408524510272974,
+        "auto_mean": 0.5244741268778376,
+        "regime_gap": 0.11637832414945981,
+        "human_advantage": true,
+        "human_f1s": [
+          0.6318932674345057,
+          0.6498116346200891
+        ],
+        "auto_f1s": [
+          0.46003354776089644,
+          0.5889147059947787
+        ]
+      },
+      "AC": {
+        "human_mean": 0.6478534211371068,
+        "auto_mean": 0.6127866056058149,
+        "regime_gap": 0.03506681553129187,
+        "human_advantage": true,
+        "human_f1s": [
+          0.6785863208746504,
+          0.6171205213995632
+        ],
+        "auto_f1s": [
+          0.5673177326984131,
+          0.6582554785132166
+        ]
+      },
+      "BC": {
+        "human_mean": 0.6900940760732595,
+        "auto_mean": 0.5722968319799566,
+        "regime_gap": 0.11779724409330283,
+        "human_advantage": true,
+        "human_f1s": [
+          0.6902212051868802,
+          0.6899669469596386
+        ],
+        "auto_f1s": [
+          0.4553311050761809,
+          0.6892625588837322
+        ]
+      },
+      "ABC": {
+        "human_mean": 0.6897969885036224,
+        "auto_mean": 0.5722968319799566,
+        "regime_gap": 0.11750015652366574,
+        "human_advantage": true,
+        "human_f1s": [
+          0.6902212051868802,
+          0.6893727718203645
+        ],
+        "auto_f1s": [
+          0.4553311050761809,
+          0.6892625588837322
+        ]
+      }
+    },
+    "rank_divergence": {
+      "A": {
+        "human_rank": 5,
+        "auto_rank": 5,
+        "rank_shift": 0
+      },
+      "B": {
+        "human_rank": 7,
+        "auto_rank": 7,
+        "rank_shift": 0
+      },
+      "C": {
+        "human_rank": 1,
+        "auto_rank": 2,
+        "rank_shift": 1
+      },
+      "AB": {
+        "human_rank": 6,
+        "auto_rank": 6,
+        "rank_shift": 0
+      },
+      "AC": {
+        "human_rank": 4,
+        "auto_rank": 1,
+        "rank_shift": -3
+      },
+      "BC": {
+        "human_rank": 2,
+        "auto_rank": 3,
+        "rank_shift": 1
+      },
+      "ABC": {
+        "human_rank": 3,
+        "auto_rank": 4,
+        "rank_shift": 1
+      }
+    },
+    "human_ranking": [
+      [
+        "C",
+        0.7198823344700661
+      ],
+      [
+        "BC",
+        0.6900940760732595
+      ],
+      [
+        "ABC",
+        0.6897969885036224
+      ],
+      [
+        "AC",
+        0.6478534211371068
+      ],
+      [
+        "A",
+        0.6472231781951817
+      ],
+      [
+        "AB",
+        0.6408524510272974
+      ],
+      [
+        "B",
+        0.5735463593142175
+      ]
+    ],
+    "auto_ranking": [
+      [
+        "AC",
+        0.6127866056058149
+      ],
+      [
+        "C",
+        0.5926415789474774
+      ],
+      [
+        "BC",
+        0.5722968319799566
+      ],
+      [
+        "ABC",
+        0.5722968319799566
+      ],
+      [
+        "A",
+        0.566865292911642
+      ],
+      [
+        "AB",
+        0.5244741268778376
+      ],
+      [
+        "B",
+        0.5210867683811731
+      ]
+    ],
+    "hypothesis_supported": true,
+    "interpretation": "SUPPORTED: B/C/BC gap > A gap"
+  },
+  "dod_analysis": {
+    "BC_vs_A": {
+      "comparison": "BC_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": 0.042870897878077685,
+      "delta_auto": 0.0054315390683145615,
+      "dod": 0.037439358809763124,
+      "ci_95": [
+        0.009671668276274435,
+        0.06513339540914201
+      ],
+      "p_value": 0.0032,
+      "cohens_d": 2.6316448653362055,
+      "se": 0.014226599988057304,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": true
+    },
+    "C_vs_A": {
+      "comparison": "C_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": 0.0726591562748844,
+      "delta_auto": 0.025776286035835372,
+      "dod": 0.046882870239049024,
+      "ci_95": [
+        0.01995198377259235,
+        0.07489738054182311
+      ],
+      "p_value": 0.0001,
+      "cohens_d": 3.3165043082361434,
+      "se": 0.014136230766419027,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": true
+    },
+    "B_vs_A": {
+      "comparison": "B_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": -0.07367681888096422,
+      "delta_auto": -0.04577852453046888,
+      "dod": -0.027898294350495345,
+      "ci_95": [
+        -0.05819927983527292,
+        0.001776052727450351
+      ],
+      "p_value": 0.9666,
+      "cohens_d": -1.8205264246747717,
+      "se": 0.015324300692575359,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": false
+    },
+    "AB_vs_A": {
+      "comparison": "AB_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": -0.006370727167884338,
+      "delta_auto": -0.04239116603380444,
+      "dod": 0.0360204388659201,
+      "ci_95": [
+        0.010107365514282316,
+        0.06191187209909196
+      ],
+      "p_value": 0.0036,
+      "cohens_d": 2.678331311094787,
+      "se": 0.013448836115497784,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": true
+    },
+    "AC_vs_A": {
+      "comparison": "AC_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": 0.0006302429419250966,
+      "delta_auto": 0.04592131269417288,
+      "dod": -0.04529106975224778,
+      "ci_95": [
+        -0.068371842806857,
+        -0.022382525181118138
+      ],
+      "p_value": 0.9999,
+      "cohens_d": -3.888939817373713,
+      "se": 0.011646122562738408,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": true
+    },
+    "ABC_vs_A": {
+      "comparison": "ABC_vs_A",
+      "method": "instance_bootstrap",
+      "delta_human": 0.04257381030844065,
+      "delta_auto": 0.0054315390683145615,
+      "dod": 0.03714227124012609,
+      "ci_95": [
+        0.009316784024580936,
+        0.0648749299989995
+      ],
+      "p_value": 0.0034,
+      "cohens_d": 2.6093937699900867,
+      "se": 0.014234061438825002,
+      "n_boot": 10000,
+      "n_samples": 12906,
+      "n_human_datasets": 2,
+      "n_auto_datasets": 2,
+      "significant": true
+    },
+    "fdr_correction": {
+      "corrected": {
+        "dod_C_vs_A": {
+          "p_original": 0.0001,
+          "p_adjusted": 0.0006000000000000001,
+          "reject_h0": true
+        },
+        "dod_BC_vs_A": {
+          "p_original": 0.0032,
+          "p_adjusted": 0.0054,
+          "reject_h0": true
+        },
+        "dod_ABC_vs_A": {
+          "p_original": 0.0034,
+          "p_adjusted": 0.0054,
+          "reject_h0": true
+        },
+        "dod_AB_vs_A": {
+          "p_original": 0.0036,
+          "p_adjusted": 0.0054,
+          "reject_h0": true
+        },
+        "dod_B_vs_A": {
+          "p_original": 0.9666,
+          "p_adjusted": 0.9999,
+          "reject_h0": false
+        },
+        "dod_AC_vs_A": {
+          "p_original": 0.9999,
+          "p_adjusted": 0.9999,
+          "reject_h0": false
+        }
+      },
+      "n_rejected": 4,
+      "n_tests": 6,
+      "method": "benjamini-hochberg"
+    }
+  },
+  "lexical_interference": {
+    "c_to_ac_human": {
+      "drops": {
+        "dreaddit_test": 0.06056933648419227,
+        "twitter_gold": 0.08348849018172633
+      },
+      "mean_drop": 0.0720289133329593,
+      "ci_95": [
+        0.05211602039470592,
+        0.09225712673939807
+      ],
+      "p_value": 0.0,
+      "interference_present": true,
+      "n_samples": 3578,
+      "method": "instance_bootstrap"
+    },
+    "c_to_ac_auto": {
+      "drops": {
+        "twitter": -0.06339918314483795,
+        "reddit_combi": 0.023109129828162933
+      },
+      "mean_drop": -0.020145026658337506,
+      "ci_95": [
+        -0.03319083372509288,
+        -0.007069334496649731
+      ],
+      "p_value": 0.9988,
+      "interference_present": false,
+      "n_samples": 9328,
+      "method": "instance_bootstrap"
+    },
+    "bc_to_abc_human": {
+      "drops": {
+        "dreaddit_test": 0.0,
+        "twitter_gold": 0.0005941751392740668
+      },
+      "mean_drop": 0.0002970875696370334,
+      "ci_95": [
+        0.0,
+        0.0009153624594806869
+      ],
+      "p_value": 0.3727,
+      "interference_present": true,
+      "n_samples": 3578,
+      "method": "instance_bootstrap"
+    },
+    "bc_to_abc_auto": {
+      "drops": {
+        "twitter": 0.0,
+        "reddit_combi": 0.0
+      },
+      "mean_drop": 0.0,
+      "ci_95": [
+        -0.00015488615270840833,
+        0.00015492897666473867
+      ],
+      "p_value": 0.6531,
+      "interference_present": false,
+      "n_samples": 9328,
+      "method": "instance_bootstrap"
+    },
+    "summary": {
+      "human_interference": true,
+      "auto_interference": false,
+      "asymmetric": true,
+      "interpretation": "Lexical Interference CONFIRMED: adding A degrades C on human but not auto"
+    }
+  },
+  "mcnemar_tests": {
+    "dreaddit_test__C_vs_A": {
+      "statistic": 21.67195767195767,
+      "p_value": 3.2348576790575123e-06,
+      "b01": 62,
+      "b10": 127,
+      "n_discordant": 189,
+      "n_samples": 715,
+      "better": "A",
+      "dataset": "dreaddit_test",
+      "label_type": "human"
+    },
+    "dreaddit_test__BC_vs_A": {
+      "statistic": 6.386740331491713,
+      "p_value": 0.011497597458214215,
+      "b01": 73,
+      "b10": 108,
+      "n_discordant": 181,
+      "n_samples": 715,
+      "better": "A",
+      "dataset": "dreaddit_test",
+      "label_type": "human"
+    },
+    "dreaddit_test__C_vs_AC": {
+      "statistic": 9.640845070422536,
+      "p_value": 0.0019029766478761978,
+      "b01": 52,
+      "b10": 90,
+      "n_discordant": 142,
+      "n_samples": 715,
+      "better": "A",
+      "dataset": "dreaddit_test",
+      "label_type": "human"
+    },
+    "dreaddit_test__BC_vs_ABC": {
+      "statistic": 0,
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0,
+      "n_samples": 715,
+      "dataset": "dreaddit_test",
+      "label_type": "human"
+    },
+    "twitter__C_vs_A": {
+      "statistic": 39.6292403248925,
+      "p_value": 3.0705138431841306e-10,
+      "b01": 902,
+      "b10": 1191,
+      "n_discordant": 2093,
+      "n_samples": 6218,
+      "better": "A",
+      "dataset": "twitter",
+      "label_type": "auto"
+    },
+    "twitter__BC_vs_A": {
+      "statistic": 11.823326771653543,
+      "p_value": 0.0005849325510270953,
+      "b01": 938,
+      "b10": 1094,
+      "n_discordant": 2032,
+      "n_samples": 6218,
+      "better": "A",
+      "dataset": "twitter",
+      "label_type": "auto"
+    },
+    "twitter__C_vs_AC": {
+      "statistic": 2.511532547411584,
+      "p_value": 0.11301597672111474,
+      "b01": 940,
+      "b10": 1011,
+      "n_discordant": 1951,
+      "n_samples": 6218,
+      "better": "A",
+      "dataset": "twitter",
+      "label_type": "auto"
+    },
+    "twitter__BC_vs_ABC": {
+      "statistic": 0.5,
+      "p_value": 0.47950012218695337,
+      "b01": 1,
+      "b10": 1,
+      "n_discordant": 2,
+      "n_samples": 6218,
+      "better": "tie",
+      "dataset": "twitter",
+      "label_type": "auto"
+    },
+    "twitter_gold__C_vs_A": {
+      "statistic": 50.12921890067502,
+      "p_value": 1.439515173728978e-12,
+      "b01": 404,
+      "b10": 633,
+      "n_discordant": 1037,
+      "n_samples": 2863,
+      "better": "A",
+      "dataset": "twitter_gold",
+      "label_type": "human"
+    },
+    "twitter_gold__BC_vs_A": {
+      "statistic": 59.241706161137444,
+      "p_value": 1.3988810110276972e-14,
+      "b01": 402,
+      "b10": 653,
+      "n_discordant": 1055,
+      "n_samples": 2863,
+      "better": "A",
+      "dataset": "twitter_gold",
+      "label_type": "human"
+    },
+    "twitter_gold__C_vs_AC": {
+      "statistic": 150.8991323210412,
+      "p_value": 0.0,
+      "b01": 274,
+      "b10": 648,
+      "n_discordant": 922,
+      "n_samples": 2863,
+      "better": "A",
+      "dataset": "twitter_gold",
+      "label_type": "human"
+    },
+    "twitter_gold__BC_vs_ABC": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 1,
+      "n_discordant": 1,
+      "n_samples": 2863,
+      "better": "A",
+      "dataset": "twitter_gold",
+      "label_type": "human"
+    },
+    "reddit_combi__C_vs_A": {
+      "statistic": 0.416135881104034,
+      "p_value": 0.5188714891667339,
+      "b01": 228,
+      "b10": 243,
+      "n_discordant": 471,
+      "n_samples": 3110,
+      "better": "A",
+      "dataset": "reddit_combi",
+      "label_type": "auto"
+    },
+    "reddit_combi__BC_vs_A": {
+      "statistic": 8.659203980099502,
+      "p_value": 0.003254134231795991,
+      "b01": 171,
+      "b10": 231,
+      "n_discordant": 402,
+      "n_samples": 3110,
+      "better": "A",
+      "dataset": "reddit_combi",
+      "label_type": "auto"
+    },
+    "reddit_combi__C_vs_AC": {
+      "statistic": 0.0028735632183908046,
+      "p_value": 0.9572493734683177,
+      "b01": 175,
+      "b10": 173,
+      "n_discordant": 348,
+      "n_samples": 3110,
+      "better": "B",
+      "dataset": "reddit_combi",
+      "label_type": "auto"
+    },
+    "reddit_combi__BC_vs_ABC": {
+      "statistic": 0,
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0,
+      "n_samples": 3110,
+      "dataset": "reddit_combi",
+      "label_type": "auto"
+    }
+  },
+  "permutation_regime_divergence": {
+    "channel_gaps": {
+      "A": 0.08035788528353971,
+      "B": 0.05245959093304442,
+      "C": 0.12724075552258873,
+      "AB": 0.11637832414945981,
+      "AC": 0.03506681553129187,
+      "BC": 0.11779724409330283,
+      "ABC": 0.11750015652366574
+    },
+    "structure_gaps": [
+      0.05245959093304442,
+      0.12724075552258873,
+      0.11779724409330283
+    ],
+    "lexical_gaps": [
+      0.08035788528353971
+    ],
+    "observed_diff": 0.01880797823277229,
+    "p_permutation_channel_level": 0.4986,
+    "n_channels_shuffled": 4,
+    "note_channel_level": "N=4 channels \u2014 low power by design; tests structural category assignment, not sample-level effect",
+    "p_bootstrap_instance_level": 0.092,
+    "ci_95": [
+      -0.009480441143814603,
+      0.0468704686443313
+    ],
+    "n_boot": 5000,
+    "n_samples": 90342,
+    "p_permutation": 0.092,
+    "significant": false,
+    "interpretation": "Structure channels show +0.0188 larger regime gap. Instance-bootstrap (PRIMARY): p=0.0920, CI=[-0.0095,+0.0469], N=90,342. Channel-level (supplementary, N=4): p=0.4986. Not significant (based on instance-level CI)."
+  },
+  "effect_sizes": {
+    "channel_comparisons": {
+      "C_vs_A_human": {
+        "d": 3.0812614081314824,
+        "size": "large",
+        "g1_mean": 0.7198823344700661,
+        "g2_mean": 0.6472231781951817
+      },
+      "C_vs_A_auto": {
+        "d": 0.2596478868783191,
+        "size": "small",
+        "g1_mean": 0.5926415789474774,
+        "g2_mean": 0.566865292911642
+      },
+      "C_vs_A_all": {
+        "d": 0.5782297087433953,
+        "size": "medium",
+        "g1_mean": 0.6562619567087717,
+        "g2_mean": 0.6070442355534118
+      },
+      "BC_vs_A_human": {
+        "d": 3.1551929371114436,
+        "size": "large",
+        "g1_mean": 0.6900940760732595,
+        "g2_mean": 0.6472231781951817
+      },
+      "BC_vs_A_auto": {
+        "d": 0.04339744604173384,
+        "size": "small",
+        "g1_mean": 0.5722968319799566,
+        "g2_mean": 0.566865292911642
+      },
+      "BC_vs_A_all": {
+        "d": 0.25934620611374615,
+        "size": "small",
+        "g1_mean": 0.631195454026608,
+        "g2_mean": 0.6070442355534118
+      },
+      "C_vs_AC_human": {
+        "d": 1.9855623155144053,
+        "size": "large",
+        "g1_mean": 0.7198823344700661,
+        "g2_mean": 0.6478534211371068
+      },
+      "C_vs_AC_auto": {
+        "d": -0.20206553965273216,
+        "size": "small",
+        "g1_mean": 0.5926415789474774,
+        "g2_mean": 0.6127866056058149
+      },
+      "C_vs_AC_all": {
+        "d": 0.3180001000514005,
+        "size": "small",
+        "g1_mean": 0.6562619567087717,
+        "g2_mean": 0.6303200133714608
+      },
+      "BC_vs_ABC_human": {
+        "d": 0.670844341101875,
+        "size": "medium",
+        "g1_mean": 0.6900940760732595,
+        "g2_mean": 0.6897969885036224
+      },
+      "BC_vs_ABC_auto": {
+        "d": 0.0,
+        "size": "small",
+        "g1_mean": 0.5722968319799566,
+        "g2_mean": 0.5722968319799566
+      },
+      "BC_vs_ABC_all": {
+        "d": 0.001267501841942329,
+        "size": "small",
+        "g1_mean": 0.631195454026608,
+        "g2_mean": 0.6310469102417895
+      }
+    },
+    "human_vs_auto": 1.270351983896594
+  },
+  "domain_robustness": {
+    "rdr_scores": {
+      "A": 0.7718752895403076,
+      "B": 0.7757557643074429,
+      "C": 0.6415499856413918,
+      "AB": 0.674292013144762,
+      "AC": 0.8234728616959456,
+      "BC": 0.6278647151017067,
+      "ABC": 0.6277771172024283
+    },
+    "structure_mean_rdr": 0.6817234883501805,
+    "lexical_mean_rdr": 0.7718752895403076,
+    "structure_more_robust": false,
+    "interpretation": "No clear robustness advantage"
+  },
+  "global_fdr_correction": {
+    "corrected": {
+      "interf_c_to_ac_human": {
+        "p_original": 0.0,
+        "p_adjusted": 0.0,
+        "reject_h0": true
+      },
+      "mcnemar_twitter_gold__C_vs_AC": {
+        "p_original": 0.0,
+        "p_adjusted": 0.0,
+        "reject_h0": true
+      },
+      "mcnemar_twitter_gold__BC_vs_A": {
+        "p_original": 1.3988810110276972e-14,
+        "p_adjusted": 1.2589929099249275e-13,
+        "reject_h0": true
+      },
+      "mcnemar_twitter_gold__C_vs_A": {
+        "p_original": 1.439515173728978e-12,
+        "p_adjusted": 9.716727422670601e-12,
+        "reject_h0": true
+      },
+      "mcnemar_twitter__C_vs_A": {
+        "p_original": 3.0705138431841306e-10,
+        "p_adjusted": 1.6580774753194304e-09,
+        "reject_h0": true
+      },
+      "mcnemar_dreaddit_test__C_vs_A": {
+        "p_original": 3.2348576790575123e-06,
+        "p_adjusted": 1.4556859555758805e-05,
+        "reject_h0": true
+      },
+      "dod_C_vs_A": {
+        "p_original": 0.0001,
+        "p_adjusted": 0.0003857142857142857,
+        "reject_h0": true
+      },
+      "mcnemar_twitter__BC_vs_A": {
+        "p_original": 0.0005849325510270953,
+        "p_adjusted": 0.0019741473597164466,
+        "reject_h0": true
+      },
+      "mcnemar_dreaddit_test__C_vs_AC": {
+        "p_original": 0.0019029766478761978,
+        "p_adjusted": 0.005708929943628593,
+        "reject_h0": true
+      },
+      "dod_BC_vs_A": {
+        "p_original": 0.0032,
+        "p_adjusted": 0.007476923076923076,
+        "reject_h0": true
+      },
+      "mcnemar_reddit_combi__BC_vs_A": {
+        "p_original": 0.003254134231795991,
+        "p_adjusted": 0.007476923076923076,
+        "reject_h0": true
+      },
+      "dod_ABC_vs_A": {
+        "p_original": 0.0034,
+        "p_adjusted": 0.007476923076923076,
+        "reject_h0": true
+      },
+      "dod_AB_vs_A": {
+        "p_original": 0.0036,
+        "p_adjusted": 0.007476923076923076,
+        "reject_h0": true
+      },
+      "mcnemar_dreaddit_test__BC_vs_A": {
+        "p_original": 0.011497597458214215,
+        "p_adjusted": 0.022173937955127416,
+        "reject_h0": true
+      },
+      "perm_regime_divergence": {
+        "p_original": 0.092,
+        "p_adjusted": 0.1656,
+        "reject_h0": false
+      },
+      "mcnemar_twitter__C_vs_AC": {
+        "p_original": 0.11301597672111474,
+        "p_adjusted": 0.19071446071688114,
+        "reject_h0": false
+      },
+      "interf_bc_to_abc_human": {
+        "p_original": 0.3727,
+        "p_adjusted": 0.591935294117647,
+        "reject_h0": false
+      },
+      "mcnemar_twitter__BC_vs_ABC": {
+        "p_original": 0.47950012218695337,
+        "p_adjusted": 0.7192501832804301,
+        "reject_h0": false
+      },
+      "mcnemar_reddit_combi__C_vs_A": {
+        "p_original": 0.5188714891667339,
+        "p_adjusted": 0.7373436951316744,
+        "reject_h0": false
+      },
+      "interf_bc_to_abc_auto": {
+        "p_original": 0.6531,
+        "p_adjusted": 0.881685,
+        "reject_h0": false
+      },
+      "mcnemar_reddit_combi__C_vs_AC": {
+        "p_original": 0.9572493734683177,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "dod_B_vs_A": {
+        "p_original": 0.9666,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "interf_c_to_ac_auto": {
+        "p_original": 0.9988,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "dod_AC_vs_A": {
+        "p_original": 0.9999,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "mcnemar_dreaddit_test__BC_vs_ABC": {
+        "p_original": 1.0,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "mcnemar_twitter_gold__BC_vs_ABC": {
+        "p_original": 1.0,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      },
+      "mcnemar_reddit_combi__BC_vs_ABC": {
+        "p_original": 1.0,
+        "p_adjusted": 1.0,
+        "reject_h0": false
+      }
+    },
+    "n_rejected": 14,
+    "n_tests": 27,
+    "method": "benjamini-hochberg"
+  },
+  "transfer_analysis": {
+    "channel_stats": {
+      "A": {
+        "mean_retention": 94.40433459756157,
+        "std_retention": 9.043488078201433,
+        "n_transfers": 3
+      },
+      "B": {
+        "mean_retention": 96.66265775550049,
+        "std_retention": 10.042898883824735,
+        "n_transfers": 3
+      },
+      "C": {
+        "mean_retention": 85.04713681080068,
+        "std_retention": 11.977734792752768,
+        "n_transfers": 3
+      },
+      "AB": {
+        "mean_retention": 89.61217428763722,
+        "std_retention": 12.520517570008407,
+        "n_transfers": 3
+      },
+      "AC": {
+        "mean_retention": 90.51630209875582,
+        "std_retention": 5.479236808118707,
+        "n_transfers": 3
+      },
+      "BC": {
+        "mean_retention": 88.59771317432633,
+        "std_retention": 16.00106520726304,
+        "n_transfers": 3
+      },
+      "ABC": {
+        "mean_retention": 88.56901826054077,
+        "std_retention": 15.980721928919959,
+        "n_transfers": 3
+      }
+    },
+    "bc_vs_a_comparison": {
+      "bc_mean": 90.10250258020916,
+      "a_mean": 94.40433459756157,
+      "mann_whitney_stat": 12.0,
+      "p_value": 0.6363636363636362,
+      "significant": false
+    },
+    "domain_transferability_index": {
+      "A": 86.15143519010394,
+      "B": 87.56497504567167,
+      "C": 74.54805515506754,
+      "AB": 78.6265556551736,
+      "AC": 85.34980936542757,
+      "BC": 75.0444211794142,
+      "ABC": 75.03099463872964
+    },
+    "interpretation": "B/C channels do not significantly outperform A in cross-platform transfer"
+  },
+  "hypothesis_verdict": {
+    "individual_tests": [
+      {
+        "test": "Label regime gap",
+        "verdict": "SUPPORTED",
+        "detail": "B/C/BC gap > A gap"
+      },
+      {
+        "test": "DoD BC-A",
+        "verdict": "SUPPORTED",
+        "detail": "DoD=+0.0374, d=2.63"
+      },
+      {
+        "test": "Lexical interference",
+        "verdict": "SUPPORTED",
+        "detail": "C>AC on human only"
+      },
+      {
+        "test": "Channel orthogonality",
+        "verdict": "WEAK",
+        "detail": ""
+      },
+      {
+        "test": "Regime permutation",
+        "verdict": "NOT SIGNIFICANT",
+        "detail": ""
+      },
+      {
+        "test": "McNemar C vs A (human)",
+        "verdict": "SUPPORTED",
+        "detail": "2 sig. datasets"
+      }
+    ],
+    "n_supported": 4,
+    "n_total": 6,
+    "overall": "SUPPORTED"
+  }
+}

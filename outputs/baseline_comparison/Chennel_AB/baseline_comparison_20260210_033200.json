@@ -1,0 +1,319 @@
+{
+  "timestamp": "2026-02-10T03:25:37.351874",
+  "tss_channel": "AB",
+  "n_boot": 10000,
+  "comparisons": {
+    "dreaddit_test": {
+      "tss": {
+        "channel": "AB",
+        "metrics": {
+          "macro_f1": 0.6318932674345057,
+          "f1": 0.7286821705426356,
+          "precision": 0.6161048689138576,
+          "recall": 0.8915989159891599,
+          "mcc": 0.3437772537009162,
+          "n": 715
+        },
+        "n": 715
+      },
+      "baselines": {
+        "MentalBERT": {
+          "metrics": {
+            "macro_f1": 0.8006087981146897,
+            "f1": 0.8131578947368421,
+            "precision": 0.7902813299232737,
+            "recall": 0.8373983739837398,
+            "mcc": 0.6027455840320645,
+            "n": 715
+          },
+          "mcnemar": {
+            "chi2": 51.251231527093594,
+            "p_value": 8.126832540256146e-13,
+            "a_right_b_wrong": 50,
+            "b_right_a_wrong": 153,
+            "n_discordant": 203,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.16891649946165527,
+            "ci_95": [
+              -0.20816654842769874,
+              -0.1303837956969223
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -9.926529566202905,
+          "n": 715
+        },
+        "LLaMA-3-8B-Instruct (3-shot)": {
+          "metrics": {
+            "macro_f1": 0.6130952380952381,
+            "f1": 0.75,
+            "precision": 0.6060100166944908,
+            "recall": 0.983739837398374,
+            "mcc": 0.40890741669192104,
+            "n": 715
+          },
+          "mcnemar": {
+            "chi2": 0.026490066225165563,
+            "p_value": 0.8707092210836658,
+            "a_right_b_wrong": 74,
+            "b_right_a_wrong": 77,
+            "n_discordant": 151,
+            "significant": false,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": 0.018422937905138183,
+            "ci_95": [
+              -0.02341311300185922,
+              0.05971350426870812
+            ],
+            "p_value": 0.1906,
+            "significant": false,
+            "n_boot": 10000
+          },
+          "cohens_d": 1.0035394963029294,
+          "n": 715
+        }
+      }
+    },
+    "reddit_combi": {
+      "tss": {
+        "channel": "AB",
+        "metrics": {
+          "macro_f1": 0.5889147059947787,
+          "f1": 0.9192369406311286,
+          "precision": 0.8973198746954403,
+          "recall": 0.9422514619883041,
+          "mcc": 0.1881514795215612,
+          "n": 3110
+        },
+        "n": 3110
+      },
+      "baselines": {
+        "MentalBERT": {
+          "metrics": {
+            "macro_f1": 0.7596625309115717,
+            "f1": 0.922102839600921,
+            "precision": 0.9705169628432956,
+            "recall": 0.8782894736842105,
+            "mcc": 0.551517949177994,
+            "n": 3110
+          },
+          "mcnemar": {
+            "chi2": 4.077071290944123,
+            "p_value": 0.04346894088452746,
+            "a_right_b_wrong": 236,
+            "b_right_a_wrong": 283,
+            "n_discordant": 519,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.1707805799437835,
+            "ci_95": [
+              -0.19988643546237975,
+              -0.1422957097218057
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -14.529831711364812,
+          "n": 3110
+        },
+        "LLaMA-3-8B-Instruct (3-shot)": {
+          "metrics": {
+            "macro_f1": 0.7941289252410575,
+            "f1": 0.9496244733467668,
+            "precision": 0.951891296364304,
+            "recall": 0.9473684210526315,
+            "mcc": 0.5883860574993506,
+            "n": 3110
+          },
+          "mcnemar": {
+            "chi2": 80.33076923076923,
+            "p_value": 0.0,
+            "a_right_b_wrong": 106,
+            "b_right_a_wrong": 284,
+            "n_discordant": 390,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.20505837590316506,
+            "ci_95": [
+              -0.23445901760433552,
+              -0.17589103480974597
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -16.83666371433821,
+          "n": 3110
+        }
+      }
+    },
+    "twitter": {
+      "tss": {
+        "channel": "AB",
+        "metrics": {
+          "macro_f1": 0.46003354776089644,
+          "f1": 0.24580111970141297,
+          "precision": 0.5940721649484536,
+          "recall": 0.1549579831932773,
+          "mcc": 0.08740327698190647,
+          "n": 6218
+        },
+        "n": 6218
+      },
+      "baselines": {
+        "MentalBERT": {
+          "metrics": {
+            "macro_f1": 0.4181524431083943,
+            "f1": 0.1378026070763501,
+            "precision": 0.8987854251012146,
+            "recall": 0.0746218487394958,
+            "mcc": 0.1711413846540605,
+            "n": 6218
+          },
+          "mcnemar": {
+            "chi2": 3.506311360448808,
+            "p_value": 0.06113542794863691,
+            "a_right_b_wrong": 331,
+            "b_right_a_wrong": 382,
+            "n_discordant": 713,
+            "significant": false,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": 0.04191445493624324,
+            "ci_95": [
+              0.030063867613982307,
+              0.05362859667017394
+            ],
+            "p_value": 0.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": 7.36833074671108,
+          "n": 6218
+        },
+        "LLaMA-3-8B-Instruct (3-shot)": {
+          "metrics": {
+            "macro_f1": 0.5221775405497023,
+            "f1": 0.32791327913279134,
+            "precision": 0.8461538461538461,
+            "recall": 0.20336134453781513,
+            "mcc": 0.2653295340211786,
+            "n": 6218
+          },
+          "mcnemar": {
+            "chi2": 122.94822335025381,
+            "p_value": 0.0,
+            "a_right_b_wrong": 318,
+            "b_right_a_wrong": 667,
+            "n_discordant": 985,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.06209737900838168,
+            "ci_95": [
+              -0.07600815660281313,
+              -0.04824121772774847
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -9.915612492286654,
+          "n": 6218
+        }
+      }
+    },
+    "twitter_gold": {
+      "tss": {
+        "channel": "AB",
+        "metrics": {
+          "macro_f1": 0.6498116346200891,
+          "f1": 0.4848084544253633,
+          "precision": 0.6721611721611722,
+          "recall": 0.37913223140495866,
+          "mcc": 0.34279100850988403,
+          "n": 2863
+        },
+        "n": 2863
+      },
+      "baselines": {
+        "MentalBERT": {
+          "metrics": {
+            "macro_f1": 0.7149641926970842,
+            "f1": 0.5700071073205402,
+            "precision": 0.9134396355353075,
+            "recall": 0.4142561983471074,
+            "mcc": 0.5175640640696523,
+            "n": 2863
+          },
+          "mcnemar": {
+            "chi2": 62.168377823408626,
+            "p_value": 3.1086244689504383e-15,
+            "a_right_b_wrong": 156,
+            "b_right_a_wrong": 331,
+            "n_discordant": 487,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.06483922407878742,
+            "ci_95": [
+              -0.08659262631388823,
+              -0.043172778598298586
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -6.664437857870271,
+          "n": 2863
+        },
+        "LLaMA-3-8B-Instruct (3-shot)": {
+          "metrics": {
+            "macro_f1": 0.7997723686184535,
+            "f1": 0.7262693156732892,
+            "precision": 0.7796208530805687,
+            "recall": 0.6797520661157025,
+            "mcc": 0.6034295557039914,
+            "n": 2863
+          },
+          "mcnemar": {
+            "chi2": 106.78533333333333,
+            "p_value": 0.0,
+            "a_right_b_wrong": 233,
+            "b_right_a_wrong": 517,
+            "n_discordant": 750,
+            "significant": true,
+            "winner": "B"
+          },
+          "bootstrap_diff": {
+            "mean_diff": -0.14991415262961763,
+            "ci_95": [
+              -0.17304928186083418,
+              -0.12722408487825512
+            ],
+            "p_value": 1.0,
+            "significant": true,
+            "n_boot": 10000
+          },
+          "cohens_d": -17.07000789447672,
+          "n": 2863
+        }
+      }
+    }
+  }
+}
