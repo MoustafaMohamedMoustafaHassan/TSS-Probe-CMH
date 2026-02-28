@@ -1,4 +1,3 @@
-# TSS-Probe-CMH
 # TSS — Triple-Stream Stress Detector
 **A transparent, white-box diagnostic probe for auditing *labeling regimes* in Computational Mental Health (CMH).**
 # For submittion: The Divergence Hypothesis: Unmasking Lexical Interference and Label Bias in Mental Health NLP

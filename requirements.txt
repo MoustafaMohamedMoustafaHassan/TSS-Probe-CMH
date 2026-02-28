@@ -1,0 +1,31 @@
+# TSS: Transferable Stress Signals — Dependencies
+# Install: pip install -r requirements.txt
+# Then:    python -m spacy download en_core_web_sm
+
+# Core ML
+scikit-learn>=1.3,<1.6
+numpy>=1.24,<2.0
+pandas>=2.0,<2.3
+scipy>=1.11,<1.14
+
+# NLP
+spacy>=3.6,<3.9
+# Model downloaded automatically by features.py, or run:
+#   python -m spacy download en_core_web_sm
+
+# Interpretability
+shap>=0.44,<0.47
+
+# Statistics
+statsmodels>=0.14,<0.15
+
+# Visualization (used by scripts 04/05)
+matplotlib>=3.7,<3.10
+seaborn>=0.12,<0.14
+
+# Serialization
+joblib>=1.3,<1.5
+
+# Utilities
+tqdm>=4.65,<4.70
+openpyxl>=3.1,<3.3
