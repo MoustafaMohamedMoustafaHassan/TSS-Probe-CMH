@@ -7,7 +7,7 @@
 This repository accompanies the paper:
 
 **“The Divergence Hypothesis: Unmasking Lexical Interference and Label Bias in Mental Health NLP”**  
-Accepted at **BioNLP 2026**.
+Accepted at **ACL BioNLP 2026**.
 
 The repository provides code, processed artifacts, and reproducibility materials corresponding to the camera-ready version of the paper.
 
