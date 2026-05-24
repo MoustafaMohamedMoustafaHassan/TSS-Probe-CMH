@@ -1,28 +1,36 @@
-# TSS — Triple-Stream Stress Detector
-**A transparent, white-box diagnostic probe for auditing *labeling regimes* in Computational Mental Health (CMH).**
-# For submittion: The Divergence Hypothesis: Unmasking Lexical Interference and Label Bias in Mental Health NLP
+# TSS — Triple-Stream Stress
 
+**A transparent, white-box diagnostic probe for auditing labeling regimes in Computational Mental Health (CMH).**
 
-TSS is designed to answer a specific question that most CMH pipelines blur:
+## Associated Paper
 
-> **Are we learning a clinically meaningful signal — or are we learning the labeling procedure itself?**
+This repository accompanies the paper:
 
-Instead of chasing a single “best” classifier, TSS acts as an *epistemic audit framework* that decomposes evidence into **three orthogonal linguistic vessels** (lexical / morpho-syntax / psycholinguistic style), then quantifies how each vessel behaves under **human vs. auto (distant) supervision**.
+**“The Divergence Hypothesis: Unmasking Lexical Interference and Label Bias in Mental Health NLP”**  
+Accepted at **BioNLP 2026**.
+
+The repository provides code, processed artifacts, and reproducibility materials corresponding to the camera-ready version of the paper.
+
+---
+
+TSS is designed to answer a specific question that many CMH pipelines blur:
+
+> **Are we learning a clinically meaningful signal, or are we learning the labeling procedure itself?**
+
+Rather than chasing a single “best” classifier, TSS acts as an **epistemic audit framework**. It decomposes evidence into three complementary linguistic streams — **lexical**, **morpho-syntactic**, and **psycholinguistic-style** signals — and quantifies how each stream behaves under **human** versus **automatic / distant-supervision** labeling regimes.
 
 ---
 
 ## 0) What this repository contains
 
-This repo (as provided in the shared artifact) includes:
+This repository includes:
 
-- Full code (`tss/`, `scripts/`)
+- Full source code in `tss/` and `scripts/`
 - Processed datasets in `data/processed/`
 - Trained model artifacts in `artifacts/`
-- Complete run outputs in `outputs/` (results tables, statistical reports, baseline comparisons, qualitative Excel)
+- Complete run outputs in `outputs/`, including result tables, statistical reports, baseline comparisons, and qualitative Excel files
 
-This means you can **reproduce the published artifacts** without needing to re-download raw datasets first.
-
----
+These materials allow the main published artifacts to be reproduced without re-downloading the raw datasets first.
 
 ## 1) Conceptual framing (the “why”)
 
