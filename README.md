@@ -1,4 +1,4 @@
-# TSS — Triple-Stream Stress
+# TSS — Triple-Stream System
 
 **A transparent, white-box diagnostic probe for auditing labeling regimes in Computational Mental Health (CMH).**
 
